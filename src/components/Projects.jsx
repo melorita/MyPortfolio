@@ -7,7 +7,7 @@ const projects = [
     title: "Ethio Events",
     description: "Ethio Events is a web-based platform that helps users discover and register for events happening across Ethiopia. It allows organizers to create and manage events while providing participants with clear details.",
     tech: ["React", "PHP"],
-    github: "#",
+    github: "https://github.com/melorita/EventManagementSystem",
     image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
   },
   {
