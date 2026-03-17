@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, MapPin, Mail, Phone, Github, Linkedin, Twitter } from 'lucide-react';
+import { Send, MapPin, Mail, Phone, Github, Linkedin, Instagram } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -28,14 +28,14 @@ const Contact = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4">Get In Touch</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
           <p className="mt-6 text-slate-600 max-w-lg mx-auto">
-            Have a project in mind or just want to say hi? Feel free to reach out. I'll do my best to get back to you!
+            Have a project in mind? Feel free to reach out. I'll do my best to get back to you!
           </p>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-12 bg-white rounded-[2rem] p-8 md:p-12 shadow-sm border border-slate-100">
-          
+
           {/* Contact Info */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -88,15 +88,15 @@ const Contact = () => {
                 <a href="https://www.linkedin.com/in/melat-worku-0a7685332/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-slate-50 text-slate-600 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all transform hover:-translate-y-1">
                   <Linkedin className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-12 h-12 bg-slate-50 text-slate-600 rounded-full flex items-center justify-center hover:bg-sky-500 hover:text-white transition-all transform hover:-translate-y-1">
-                  <Twitter className="w-5 h-5" />
+                <a href="https://www.instagram.com/melorita16/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-slate-50 text-slate-600 rounded-full flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all transform hover:-translate-y-1">
+                  <Instagram className="w-5 h-5" />
                 </a>
               </div>
             </div>
           </motion.div>
 
           {/* Contact Form */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -154,7 +154,7 @@ const Contact = () => {
                 <span>Send Message</span>
                 <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </button>
-              
+
               {status && (
                 <p className={`mt-4 text-sm font-medium ${status.includes('successfully') ? 'text-emerald-600' : 'text-blue-600'}`}>
                   {status}

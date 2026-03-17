@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, Heart } from 'lucide-react';
+import { Github, Linkedin, Instagram, Heart } from 'lucide-react';
 import { Link } from 'react-scroll';
 
 const Footer = () => {
@@ -27,7 +27,7 @@ const Footer = () => {
           <div className="flex space-x-4">
             <a href="https://github.com/melorita" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors transform hover:-translate-y-1"><Github className="w-5 h-5" /></a>
             <a href="https://www.linkedin.com/in/melat-worku-0a7685332/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors transform hover:-translate-y-1"><Linkedin className="w-5 h-5" /></a>
-            <a href="#" className="hover:text-sky-400 transition-colors transform hover:-translate-y-1"><Twitter className="w-5 h-5" /></a>
+            <a href="https://www.instagram.com/melorita16/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors transform hover:-translate-y-1"><Instagram className="w-5 h-5" /></a>
           </div>
         </div>
       </div>
