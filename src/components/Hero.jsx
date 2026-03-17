@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { ArrowRight, Mail } from 'lucide-react';
+import profilePic from '../assets/melat.jpg';
 
 const Hero = () => {
   return (
@@ -60,8 +61,11 @@ const Hero = () => {
           <div className="relative w-72 h-72 md:w-[450px] md:h-[450px]">
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-100 to-indigo-50 dark:from-blue-900/40 dark:to-indigo-900/40 rounded-[3rem] transform rotate-3 scale-105" />
             <div className="absolute inset-0 bg-white dark:bg-slate-800 rounded-[3rem] shadow-xl overflow-hidden border border-slate-100 dark:border-slate-700 flex items-center justify-center">
-              {/* Replace with actual photo if available, fallback to beautiful abstract art or icon */}
-              <div className="text-[150px]">👩🏽‍💻</div>
+              <img 
+                src={profilePic} 
+                alt="Melat Worku" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </motion.div>
