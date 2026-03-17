@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, ExternalLink } from 'lucide-react';
+import { Github } from 'lucide-react';
 
 const projects = [
   {
@@ -13,24 +13,22 @@ const projects = [
   {
     title: "Local Service Finder",
     description: "A dynamic web app that connects users with nearby service providers like plumbers, electricians, and cleaners.",
-    tech: ["React", "Firebase", "Tailwind CSS", "Google Maps API"],
-    github: "#",
-    live: "#",
-    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    tech: ["React", "Node.js", "Express.js"],
+    github: "https://github.com/melorita/Local-Service-finder",
+    image: "https://plus.unsplash.com/premium_photo-1663045495725-89f23b57cfc5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGx1bWJlcnxlbnwwfHwwfHx8MA%3D%3D"
   },
   {
     title: "Letters From The Past",
     description: "A digital time capsule where users can write letters to their future selves.",
     tech: ["React", "PHP"],
     github: "https://github.com/melorita/Letters-From-The-past",
-    image: "https://images.unsplash.com/photo-1544837544-e5932a392ecf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    image: "https://plus.unsplash.com/premium_photo-1769010692771-09e6d2b8bd41?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGFzdCUyMGxldHRlcnN8ZW58MHx8MHx8fDA%3D"
   },
   {
     title: "What To Do Now",
     description: "A smart task management app that prioritizes daily tasks based on user mood and urgency.",
     tech: ["JavaScript", "React", "Redux", "Tailwind CSS"],
     github: "https://github.com/melorita/What-Should-I-Do-Now",
-
     image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
   }
 ];
@@ -77,13 +75,9 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex items-center space-x-4 mt-auto">
-                  <a href={project.github} className="flex items-center space-x-2 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">
                     <Github className="w-5 h-5" />
-                    <span>Code</span>
-                  </a>
-                  <a href={project.live} className="flex items-center space-x-2 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">
-                    <ExternalLink className="w-5 h-5" />
-                    <span>Live Demo</span>
+                    <span>View Code</span>
                   </a>
                 </div>
               </div>
